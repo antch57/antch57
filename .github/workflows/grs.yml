@@ -19,10 +19,8 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=nightowl
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=nightowl&custom_title=github%20stats&rank_icon=github
           path: profile/stats.svg
-          custom_title: github stats
-          rank_icon: github
           token: ${{ secrets.PROFILE_STATS }}
 
       - name: Generate top languages card
