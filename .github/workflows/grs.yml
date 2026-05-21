@@ -21,6 +21,8 @@ jobs:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&theme=nightowl
           path: profile/stats.svg
+          custom_title: github stats
+          rank_icon: github
           token: ${{ secrets.PROFILE_STATS }}
 
       - name: Generate top languages card
@@ -29,6 +31,7 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=nightowl
           path: profile/top-langs.svg
+          custom_title: top languages
           token: ${{ secrets.PROFILE_STATS }}
 
       - name: Commit cards
