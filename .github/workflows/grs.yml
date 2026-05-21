@@ -27,9 +27,8 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=nightowl
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=nightowl&custom_title=top%20languages
           path: profile/top-langs.svg
-          custom_title: top languages
           token: ${{ secrets.PROFILE_STATS }}
 
       - name: Commit cards
