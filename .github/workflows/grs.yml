@@ -31,12 +31,12 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.PROFILE_STATS }}
 
-      - name: Generate pin card
+      - name: Generate Wakatime card
         uses: readme-tools/github-readme-stats-action@v2
         with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=quest&theme=nightowl
-          path: profile/pin-${{ github.repository_owner }}-quest.svg
+          card: wakatime
+          path: profile/wakatime.svg
+          options: username=antch57&layout=compact
           token: ${{ secrets.PROFILE_STATS }}
 
       - name: Commit cards
